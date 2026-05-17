@@ -39,9 +39,3 @@ Function.prototype.myCall = function(this: Function, ctx: unknown, ...params: un
     return res
 
 }
-
-function a() {
-
-}
-
-a.myCall(window, 12321)

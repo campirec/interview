@@ -1,4 +1,4 @@
-function deepClone<T>(obj: T, cache = new WeakMap<object, unknown>()): T {
+export function deepClone<T>(obj: T, cache = new WeakMap<object, unknown>()): T {
     if (typeof obj !== 'object' || obj === null) {
         return obj
     }

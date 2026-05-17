@@ -6,7 +6,7 @@
     - once(event, fn)：只订阅一次
  */
 
-class EventEmitter {
+export class EventEmitter {
   private eventMap: Record<PropertyKey, Function[]> = {};
 
   on(event: string, fn: Function) {
